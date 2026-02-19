@@ -1,0 +1,44 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design internal header
+// See Vtb_counter.h for the primary calling header
+
+#ifndef VERILATED_VTB_COUNTER___024ROOT_H_
+#define VERILATED_VTB_COUNTER___024ROOT_H_  // guard
+
+#include "verilated.h"
+#include "verilated_timing.h"
+
+
+class Vtb_counter__Syms;
+
+class alignas(VL_CACHE_LINE_BYTES) Vtb_counter___024root final {
+  public:
+
+    // DESIGN SPECIFIC STATE
+    CData/*0:0*/ tb_counter__DOT__clk;
+    CData/*0:0*/ tb_counter__DOT__rst_n;
+    CData/*3:0*/ tb_counter__DOT__count;
+    CData/*0:0*/ tb_counter__DOT__en;
+    CData/*0:0*/ __Vtrigprevexpr___TOP__tb_counter__DOT__clk__0;
+    CData/*0:0*/ __Vtrigprevexpr___TOP__tb_counter__DOT__rst_n__0;
+    IData/*31:0*/ __VactIterCount;
+    VlUnpacked<QData/*63:0*/, 1> __VactTriggered;
+    VlUnpacked<QData/*63:0*/, 1> __VnbaTriggered;
+    VlDelayScheduler __VdlySched;
+    VlTriggerScheduler __VtrigSched_h0748d828__0;
+
+    // INTERNAL VARIABLES
+    Vtb_counter__Syms* vlSymsp;
+    const char* vlNamep;
+
+    // CONSTRUCTORS
+    Vtb_counter___024root(Vtb_counter__Syms* symsp, const char* namep);
+    ~Vtb_counter___024root();
+    VL_UNCOPYABLE(Vtb_counter___024root);
+
+    // INTERNAL METHODS
+    void __Vconfigure(bool first);
+};
+
+
+#endif  // guard
