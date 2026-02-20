@@ -101,14 +101,14 @@ VL_ATTR_COLD void Vtb_fifo_async___024root___eval_stl(Vtb_fifo_async___024root* 
     Vtb_fifo_async__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Locals
-    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__Vfuncout;
-    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__Vfuncout = 0;
-    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__b;
-    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__b = 0;
-    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__Vfuncout;
-    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__Vfuncout = 0;
-    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__b;
-    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__b = 0;
+    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__Vfuncout;
+    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__Vfuncout = 0;
+    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__b;
+    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__b = 0;
+    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__Vfuncout;
+    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__Vfuncout = 0;
+    CData/*3:0*/ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__b;
+    __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__b = 0;
     // Body
     if ((1ULL & vlSelfRef.__VstlTriggered[0U])) {
         vlSelfRef.tb_fifo_async__DOT__dut__DOT__w_inc 
@@ -123,20 +123,20 @@ VL_ATTR_COLD void Vtb_fifo_async___024root___eval_stl(Vtb_fifo_async___024root* 
         vlSelfRef.tb_fifo_async__DOT__dut__DOT__r_bin_next 
             = (0x0000000fU & ((IData)(vlSelfRef.tb_fifo_async__DOT__dut__DOT__r_bin) 
                               + (IData)(vlSelfRef.tb_fifo_async__DOT__dut__DOT__r_inc)));
-        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__b 
+        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__b 
             = vlSelfRef.tb_fifo_async__DOT__dut__DOT__w_bin_next;
-        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__Vfuncout 
-            = (0x0000000fU & (VL_SHIFTR_III(4,4,32, __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__b, 1U) 
-                              ^ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__b));
+        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__Vfuncout 
+            = (0x0000000fU & (VL_SHIFTR_III(4,4,32, __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__b, 1U) 
+                              ^ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__b));
         vlSelfRef.tb_fifo_async__DOT__dut__DOT__w_gray_next 
-            = __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__9__Vfuncout;
-        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__b 
+            = __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__0__Vfuncout;
+        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__b 
             = vlSelfRef.tb_fifo_async__DOT__dut__DOT__r_bin_next;
-        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__Vfuncout 
-            = (0x0000000fU & (VL_SHIFTR_III(4,4,32, __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__b, 1U) 
-                              ^ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__b));
+        __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__Vfuncout 
+            = (0x0000000fU & (VL_SHIFTR_III(4,4,32, __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__b, 1U) 
+                              ^ __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__b));
         vlSelfRef.tb_fifo_async__DOT__dut__DOT__r_gray_next 
-            = __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__10__Vfuncout;
+            = __Vinline__act_comb__TOP__0___Vfunc_tb_fifo_async__DOT__dut__DOT__bin2gray__1__Vfuncout;
     }
 }
 
@@ -179,6 +179,12 @@ VL_ATTR_COLD void Vtb_fifo_async___024root___dump_triggers__act(const VlUnpacked
     if ((1U & (IData)((triggers[0U] >> 4U)))) {
         VL_DBG_MSGS("         '" + tag + "' region trigger index 4 is active: @([true] __VdlySched.awaitingCurrentTime())\n");
     }
+    if ((1U & (IData)((triggers[0U] >> 5U)))) {
+        VL_DBG_MSGS("         '" + tag + "' region trigger index 5 is active: @(negedge tb_fifo_async.w_clk)\n");
+    }
+    if ((1U & (IData)((triggers[0U] >> 6U)))) {
+        VL_DBG_MSGS("         '" + tag + "' region trigger index 6 is active: @(negedge tb_fifo_async.r_clk)\n");
+    }
 }
 #endif  // VL_DEBUG
 
@@ -189,8 +195,8 @@ VL_ATTR_COLD void Vtb_fifo_async___024root___ctor_var_reset(Vtb_fifo_async___024
     // Body
     const uint64_t __VscopeHash = VL_MURMUR64_HASH(vlSelf->vlNamep);
     vlSelf->tb_fifo_async__DOT__w_clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 10506297422261258076ull);
-    vlSelf->tb_fifo_async__DOT__r_clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 802405791111336985ull);
     vlSelf->tb_fifo_async__DOT__w_rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 14608051737742377890ull);
+    vlSelf->tb_fifo_async__DOT__r_clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 802405791111336985ull);
     vlSelf->tb_fifo_async__DOT__r_rst_n = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 16286858059180679571ull);
     vlSelf->tb_fifo_async__DOT__w_en = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 9587523687031566971ull);
     vlSelf->tb_fifo_async__DOT__w_data = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 8323578955981543646ull);
@@ -198,13 +204,11 @@ VL_ATTR_COLD void Vtb_fifo_async___024root___ctor_var_reset(Vtb_fifo_async___024
     vlSelf->tb_fifo_async__DOT__r_en = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 1706882913386559048ull);
     vlSelf->tb_fifo_async__DOT__r_data = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 12749364516839184337ull);
     vlSelf->tb_fifo_async__DOT__empty = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 11530242892662108880ull);
-    for (int __Vi0 = 0; __Vi0 < 32; ++__Vi0) {
-        vlSelf->tb_fifo_async__DOT__exp_q[__Vi0] = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 4405465907642829043ull);
-    }
-    vlSelf->tb_fifo_async__DOT__head = 0;
-    vlSelf->tb_fifo_async__DOT__tail = 0;
-    vlSelf->tb_fifo_async__DOT__sc_count = 0;
-    vlSelf->tb_fifo_async__DOT__unnamedblk1__DOT__exp = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 5803506247959335856ull);
+    vlSelf->tb_fifo_async__DOT__exp_q.atDefault() = 0;
+    vlSelf->tb_fifo_async__DOT__r_fire_d = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 4265521985807386539ull);
+    vlSelf->tb_fifo_async__DOT__exp_front_d = 0;
+    vlSelf->tb_fifo_async__DOT__full_seen = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 14427526383686743709ull);
+    vlSelf->tb_fifo_async__DOT__empty_seen = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 13928749309701197297ull);
     for (int __Vi0 = 0; __Vi0 < 8; ++__Vi0) {
         vlSelf->tb_fifo_async__DOT__dut__DOT__mem[__Vi0] = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 8713680225523620615ull);
     }
@@ -222,9 +226,6 @@ VL_ATTR_COLD void Vtb_fifo_async___024root___ctor_var_reset(Vtb_fifo_async___024
     vlSelf->tb_fifo_async__DOT__dut__DOT__r_inc = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 15477943824331114992ull);
     vlSelf->tb_fifo_async__DOT__dut__DOT__u_sync_rptr_to_w__DOT__q1 = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 11556708321531337089ull);
     vlSelf->tb_fifo_async__DOT__dut__DOT__u_sync_wptr_to_r__DOT__q1 = VL_SCOPED_RAND_RESET_I(4, __VscopeHash, 5652599749487779309ull);
-    vlSelf->__Vtask_tb_fifo_async__DOT__test_simultaneous_rw__8__WRITER__DOT__i = 0;
-    vlSelf->__Vtask_tb_fifo_async__DOT__test_simultaneous_rw__8__READER__DOT__j = 0;
-    vlSelf->__Vtask_tb_fifo_async__DOT__test_simultaneous_rw__8__tb_fifo_async__DOT__READER__DOT__unnamedblk1_8__DOT____Vrepeat7 = 0;
     vlSelf->__VdlyVal__tb_fifo_async__DOT__dut__DOT__mem__v0 = 0;
     vlSelf->__VdlyDim0__tb_fifo_async__DOT__dut__DOT__mem__v0 = 0;
     vlSelf->__VdlySet__tb_fifo_async__DOT__dut__DOT__mem__v0 = 0;

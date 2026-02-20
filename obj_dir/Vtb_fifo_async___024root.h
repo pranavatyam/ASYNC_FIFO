@@ -16,8 +16,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_fifo_async___024root final {
 
     // DESIGN SPECIFIC STATE
     CData/*0:0*/ tb_fifo_async__DOT__w_clk;
-    CData/*0:0*/ tb_fifo_async__DOT__r_clk;
     CData/*0:0*/ tb_fifo_async__DOT__w_rst_n;
+    CData/*0:0*/ tb_fifo_async__DOT__r_clk;
     CData/*0:0*/ tb_fifo_async__DOT__r_rst_n;
     CData/*0:0*/ tb_fifo_async__DOT__w_en;
     CData/*7:0*/ tb_fifo_async__DOT__w_data;
@@ -25,7 +25,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_fifo_async___024root final {
     CData/*0:0*/ tb_fifo_async__DOT__r_en;
     CData/*7:0*/ tb_fifo_async__DOT__r_data;
     CData/*0:0*/ tb_fifo_async__DOT__empty;
-    CData/*7:0*/ tb_fifo_async__DOT__unnamedblk1__DOT__exp;
+    CData/*0:0*/ tb_fifo_async__DOT__r_fire_d;
+    CData/*7:0*/ tb_fifo_async__DOT__exp_front_d;
+    CData/*0:0*/ tb_fifo_async__DOT__full_seen;
+    CData/*0:0*/ tb_fifo_async__DOT__empty_seen;
     CData/*3:0*/ tb_fifo_async__DOT__dut__DOT__w_bin;
     CData/*3:0*/ tb_fifo_async__DOT__dut__DOT__w_bin_next;
     CData/*3:0*/ tb_fifo_async__DOT__dut__DOT__w_gray;
@@ -48,21 +51,15 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_fifo_async___024root final {
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_fifo_async__DOT__w_rst_n__0;
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_fifo_async__DOT__r_clk__0;
     CData/*0:0*/ __Vtrigprevexpr___TOP__tb_fifo_async__DOT__r_rst_n__0;
-    IData/*31:0*/ tb_fifo_async__DOT__head;
-    IData/*31:0*/ tb_fifo_async__DOT__tail;
-    IData/*31:0*/ tb_fifo_async__DOT__sc_count;
-    IData/*31:0*/ __Vtask_tb_fifo_async__DOT__test_simultaneous_rw__8__WRITER__DOT__i;
-    IData/*31:0*/ __Vtask_tb_fifo_async__DOT__test_simultaneous_rw__8__READER__DOT__j;
-    IData/*31:0*/ __Vtask_tb_fifo_async__DOT__test_simultaneous_rw__8__tb_fifo_async__DOT__READER__DOT__unnamedblk1_8__DOT____Vrepeat7;
     IData/*31:0*/ __VactIterCount;
-    VlUnpacked<CData/*7:0*/, 32> tb_fifo_async__DOT__exp_q;
     VlUnpacked<CData/*7:0*/, 8> tb_fifo_async__DOT__dut__DOT__mem;
     VlUnpacked<QData/*63:0*/, 1> __VstlTriggered;
     VlUnpacked<QData/*63:0*/, 1> __VactTriggered;
     VlUnpacked<QData/*63:0*/, 1> __VnbaTriggered;
+    VlQueue<CData/*7:0*/> tb_fifo_async__DOT__exp_q;
     VlDelayScheduler __VdlySched;
-    VlTriggerScheduler __VtrigSched_h7259801f__0;
-    VlTriggerScheduler __VtrigSched_hefe03d7e__0;
+    VlTriggerScheduler __VtrigSched_h725980de__0;
+    VlTriggerScheduler __VtrigSched_hefe03e3f__0;
 
     // INTERNAL VARIABLES
     Vtb_fifo_async__Syms* vlSymsp;

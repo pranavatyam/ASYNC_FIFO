@@ -11,7 +11,7 @@ Vtb_fifo_async__Syms::Vtb_fifo_async__Syms(VerilatedContext* contextp, const cha
     , TOP{this, namep}
 {
     // Check resources
-    Verilated::stackCheck(304);
+    Verilated::stackCheck(242);
     // Setup sub module instances
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-9);

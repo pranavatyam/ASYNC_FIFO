@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module sync2ff #(
     parameter int W = 1
 )(

@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 module fifo_async #(
     parameter int DW    = 8,
     parameter int DEPTH = 8
