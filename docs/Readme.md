@@ -38,4 +38,8 @@ tb/
   tb_updown_fsm.sv
 
 sim/
-  (optional future scripts)
+
+
+
+
+  
