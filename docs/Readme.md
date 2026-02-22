@@ -69,9 +69,9 @@ Below is a representative simulation showing:
 - Correct FIFO ordering across CDC  
 - Empty flag assertion at completion  
 
-![APB Waveform](docs/waveform_APB.png)
-![Read Domain Waveform](docs/waveform_read_domain.png)
-![Status Flags](docs/waveform_status.png)
+![APB Waveform](docs/APB.png)
+![Read Domain Waveform](docs/read_domain.png)
+![Status Flags](docs/status.png)
 
 ## 🔧 How to Run (Verilator)
 
