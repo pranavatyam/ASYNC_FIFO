@@ -41,7 +41,7 @@ This project demonstrates practical digital design, CDC safety, and verification
 ---
 
 ## 🧩 Block Diagram
-![Async FIFO Block Diagram](docs/block_diagram.png)
+![Async FIFO Block Diagram](block_diagram.png)
 
 
 ## 📁 Repository Structure
@@ -69,8 +69,8 @@ Below is a representative simulation showing:
 - Correct FIFO ordering across CDC  
 - Empty flag assertion at completion  
 
-![APB Waveform](docs/APB.png)
-![Read Domain Waveform](docs/read_domain.png)
+![APB Waveform](APB.png)
+![Read Domain Waveform](read_domain.png)
 ![Status Flags](status.png)
 
 ## 🔧 How to Run (Verilator)
