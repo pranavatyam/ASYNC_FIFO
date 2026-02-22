@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/pranavatyam/Documents/sv_courses/async_fifo/obj_dir",
-      "program": "/Users/pranavatyam/Documents/sv_courses/async_fifo/obj_dir/build/Debug/outDebug"
+      "cwd": "/Users/pranavatyam/Documents/sv_courses/async_fifo/sim/obj_dir",
+      "program": "/Users/pranavatyam/Documents/sv_courses/async_fifo/sim/obj_dir/build/Debug/outDebug"
     }
   ]
 }

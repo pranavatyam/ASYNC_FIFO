@@ -1,45 +1,88 @@
-Asynchronous FIFO with APB Interface (SystemVerilog)
+![SystemVerilog](https://img.shields.io/badge/Language-SystemVerilog-blue)
+![Verilator](https://img.shields.io/badge/Simulator-Verilator-green)
+![APB](https://img.shields.io/badge/Bus-AMBA_APB-orange)
+![CDC](https://img.shields.io/badge/Focus-Clock_Domain_Crossing-red)
+![Status](https://img.shields.io/badge/Verification-PASS-brightgreen)
 
-Overview:
-This project implements a parameterizable asynchronous FIFO in SystemVerilog designed for safe data transfer between independent clock domains. The design follows industry-standard clock domain crossing (CDC) techniques and is verified using a self-checking randomized testbench with Verilator.
+# Asynchronous FIFO with APB Interface (SystemVerilog)
 
-The long-term goal of this project is to integrate the FIFO behind an APB programming interface, enabling processor-controlled data movement in an SoC environment.
+## 📌 Overview
 
-Project Goals:
-- Implement a robust async FIFO using Gray-coded pointers
-- Ensure CDC safety using multi-flop synchronizers
-- Build a self-checking constrained-random testbench
-- Verify full/empty behavior under asynchronous clocks
-- Add APB wrapper for processor accessibility (next phase)
-- Prepare design for real SoC-style integration
+This project implements a **parameterizable asynchronous FIFO** in SystemVerilog for safe data transfer between independent clock domains. The design follows industry-standard **Clock Domain Crossing (CDC)** techniques and is verified using a **self-checking testbench with Verilator**.
 
-Key concepts demonstrated:
-- Clock Domain Crossing (CDC)
-- Gray code pointer synchronization
-- Dual-clock FIFO architecture
-- Two-flop synchronizers
-- Constrained-random verification
-- Scoreboard-based checking
+The FIFO is integrated behind an **AMBA APB slave interface**, enabling processor-controlled data movement typical of SoC environments.
 
-Repo Structure: 
+This project demonstrates practical digital design, CDC safety, and verification methodology used in real hardware teams.
 
+---
+
+## 🎯 Project Goals
+
+- Implement a robust async FIFO using Gray-coded pointers  
+- Ensure CDC safety using multi-flop synchronizers  
+- Build a self-checking verification environment  
+- Verify full/empty behavior under asynchronous clocks  
+- Integrate an APB slave wrapper for processor access  
+- Prepare the design for SoC-style integration  
+
+---
+
+## 🧠 Key Concepts Demonstrated
+
+- Clock Domain Crossing (CDC)  
+- Gray code pointer synchronization  
+- Dual-clock FIFO architecture  
+- Two-flop synchronizers  
+- APB protocol integration  
+- Self-checking testbench design  
+- Scoreboard-based verification  
+- Sticky overflow flag handling  
+
+---
+
+## 🧩 Block Diagram
+![Async FIFO Block Diagram](docs/block_diagram.png)
+
+
+## 📁 Repository Structure
 rtl/
-  fifo_async.sv     # Asynchronous FIFO (main DUT)
-  sync2ff.sv        # Two-flop synchronizer
-  gray.sv           # Binary ↔ Gray conversion
-  fifo_sync.sv      # Synchronous FIFO (reference)
-  counter.sv        # Utility module
-  updown_fsm.sv     # FSM example module
+fifo_async.sv # Asynchronous FIFO core
+sync2ff.sv # Two-flop synchronizer
+apb_fifo_async.sv # APB wrapper around FIFO
 
 tb/
-  tb_fifo_async.sv  # Self-checking async FIFO testbench
-  tb_fifo_sync.sv
-  tb_counter.sv
-  tb_updown_fsm.sv
+tb_fifo_async.sv # FIFO self-checking testbench
+tb_apb_fifo_async.sv # APB + FIFO integration testbench
+
+docs/
+waveform_example.png # Simulation waveform (add your screenshot here)
 
 sim/
+obj_dir/ # Verilator build output (generated)
 
+## 📈 Waveform Example
 
+Below is a representative simulation showing:
 
+- Independent write/read clocks  
+- APB write transactions  
+- Correct FIFO ordering across CDC  
+- Empty flag assertion at completion  
 
-  
+![Waveform](docs/waveform_APB.png)
+![Waveform](docs/waveform_read_doman.png)
+![Waveform](docs/waveform_status.png)
+
+## 🔧 How to Run (Verilator)
+
+### Build and run
+
+```bash
+verilator -Wall --binary --top-module tb_apb_fifo_async \
+  rtl/sync2ff.sv \
+  rtl/fifo_async.sv \
+  rtl/apb_fifo_async.sv \
+  tb/tb_apb_fifo_async.sv
+
+./obj_dir/Vtb_apb_fifo_async
+
