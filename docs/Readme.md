@@ -55,7 +55,7 @@ tb_fifo_async.sv # FIFO self-checking testbench
 tb_apb_fifo_async.sv # APB + FIFO integration testbench
 
 docs/
-waveform_example.png # Simulation waveform (add your screenshot here)
+waveform_example.png # Simulation waveform 
 
 sim/
 obj_dir/ # Verilator build output (generated)
@@ -69,9 +69,9 @@ Below is a representative simulation showing:
 - Correct FIFO ordering across CDC  
 - Empty flag assertion at completion  
 
-![Waveform](docs/waveform_APB.png)
-![Waveform](docs/waveform_read_doman.png)
-![Waveform](docs/waveform_status.png)
+![APB Waveform](docs/waveform_APB.png)
+![Read Domain Waveform](docs/waveform_read_domain.png)
+![Status Flags](docs/waveform_status.png)
 
 ## 🔧 How to Run (Verilator)
 
@@ -85,4 +85,9 @@ verilator -Wall --binary --top-module tb_apb_fifo_async \
   tb/tb_apb_fifo_async.sv
 
 ./obj_dir/Vtb_apb_fifo_async
+
+Alternatively you can run through the make file
+make run
+make waves
+
 
