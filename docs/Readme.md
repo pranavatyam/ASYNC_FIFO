@@ -71,7 +71,7 @@ Below is a representative simulation showing:
 
 ![APB Waveform](docs/APB.png)
 ![Read Domain Waveform](docs/read_domain.png)
-![Status Flags](docs/status.png)
+![Status Flags](status.png)
 
 ## 🔧 How to Run (Verilator)
 
